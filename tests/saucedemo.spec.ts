@@ -100,7 +100,7 @@ test.describe("SauceDemo Bonus Challenges", () => {
     await expect(page.locator(".shopping_cart_badge"), 'Cart badge should still show 1 item').toHaveText("1");
     });
 
-// Locked out user test. Had to reinstall Playwright & forgot to delete this test, so I'm typing random stuff.
+// Locked out user test. Had to reinstall Playwright & forgot to delete this test, so I'm typing random stuff. I don't know, have to add a bit more, I guess.
     test("Verify error message for locked out user", async ({page}) => {
     await page.goto("https://www.saucedemo.com/");
     await page.fill("#user-name", "locked_out_user");
