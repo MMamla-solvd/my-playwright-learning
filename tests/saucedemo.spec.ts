@@ -100,7 +100,7 @@ test.describe("SauceDemo Bonus Challenges", () => {
     await expect(page.locator(".shopping_cart_badge"), 'Cart badge should still show 1 item').toHaveText("1");
     });
 
-// Locked out user test - Typing some more cause my branches didn't switch automatically or something.
+// Locked out user test.
     test("Verify error message for locked out user", async ({page}) => {
     await page.goto("https://www.saucedemo.com/");
     await page.fill("#user-name", "locked_out_user");
