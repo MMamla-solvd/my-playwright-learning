@@ -1,5 +1,5 @@
 import {test, expect} from '@playwright/test';
-import {validUser, getLoginUrl} from "../test-data.ts";
+import {validUser, getLoginUrl} from "../test-data/test-data.ts";
 
 test("test data is wired correctly", async () => {
     const {email, password} = validUser;
